@@ -1,4 +1,5 @@
 var totalscore = 0;
+var maxscore = 2;
 
 function checkAnswer(question, answer) {
     const result1 = document.getElementById('result1');
@@ -8,7 +9,9 @@ function checkAnswer(question, answer) {
         if (answer === 'a') {
             result1.textContent = "ถูกต้อง PIM ย่อมาจาก PIM";
             result1.style.color = 'green';
-            totalscore = totalscore + 1;
+            if (totalscore < maxscore ){
+                totalscore = totalscore + 1;
+            }
             summary.textContent = "คุณได้คะแนนรวม: "+totalscore+" คะแนน";
             summary.style.color = 'blue';
         } else {
@@ -21,7 +24,9 @@ function checkAnswer(question, answer) {
         if (answer === 'b') {
             result2.textContent = "ชื่อย่อของมหาวิทยาลัยกาฬสินธุ์คือ KSU";
             result2.style.color = 'green';
-            totalscore = totalscore + 1;
+            if (totalscore < maxscore ){
+                totalscore = totalscore + 1;
+            }
             summary.textContent = "คุณได้คะแนนรวม: "+totalscore+" คะแนน";
             summary.style.color = 'blue';
         } else {
