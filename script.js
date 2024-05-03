@@ -17,6 +17,9 @@ function checkAnswer(question, answer) {
         } else {
             result1.textContent = "Incorrect! Try again.";
             result1.style.color = 'red';
+            if (totalscore > 0){
+                totalscore = totalscore - 1;
+            }
             summary.textContent = "คุณได้คะแนนรวม: "+totalscore+" คะแนน";
             summary.style.color = 'red';
         }
@@ -32,6 +35,9 @@ function checkAnswer(question, answer) {
         } else {
             result2.textContent = "Incorrect! Try again.";
             result2.style.color = 'red';
+            if (totalscore > 0){
+                totalscore = totalscore - 1;
+            }
             summary.textContent = "คุณได้คะแนนรวม: "+totalscore+" คะแนน";
             summary.style.color = 'red';
         }
