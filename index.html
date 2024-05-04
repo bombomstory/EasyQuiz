@@ -1,61 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
 <body>
 
-    <header>
-        <h2>แบบทดสอบวัดความเป็นเทพ!!</h2>
-    </header>
+<header>
+  <h2>แบบทดสอบวัดความสามารถด้าน Full Stack Developer</h2>
+</header>
 
-    <section>
-        <nav>
-          <h4>เลือกทำแบบทดสอบ</h4>
-          <ul>
-            <li><a href="#">ข้อ 1)</a></li>
-            <li><a href="#">ข้อ 2)</a></li>
-          </ul>
-        </nav>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">ข้อ 1</a></li>
+      <li><a href="#">ข้อ 2</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+ 
+    <h1></h1>
+    <p id="question1">ข้อ 1) PIM ย่อมาจากอะไร ?</p>
+    <button class="button" onclick="checkAnswer('question1','a')">A) พีไอเอ็ม</button>
+    <button class="button" onclick="checkAnswer('question1','b')">B) ปิ๋ม</button>
+    <button class="button" onclick="checkAnswer('question1','c')">C) พิม</button>
+    <button class="button" onclick="checkAnswer('question1','d')">D) ภีม</button>
+    <p id="result1"></p>
+    <hr>
 
-        <article>
+    <h1></h1>
+    <p id="question2">ข้อ 2) มหาวิทยาลัยกาฬสินธุ์ มีชื่อย่อว่าอะไร ?</p>
+    <button class="button" onclick="checkAnswer('question2','a')">A) KU</button>
+    <button class="button" onclick="checkAnswer('question2','b')">B) KSU</button>
+    <button class="button" onclick="checkAnswer('question2','c')">C) KKU</button>
+    <button class="button" onclick="checkAnswer('question2','d')">D) MKU</button>
+    <p id="result2"></p>
+    <hr>
 
-            <!-- <div class="quiz-container"> -->
+    <h1></h1>
+    <p id="summary"></p>
+    <hr>
+  </article>
+</section>
 
-                <h1></h1>
-                <p id="question1">ข้อ 1) PIM ย่อมาจากอะไร ?</p>
-                <button class="button" onclick="checkAnswer('question1','a')">A) พีไอเอ็ม</button>
-                <button class="button" onclick="checkAnswer('question1','b')">B) ปิ๋ม</button>
-                <button class="button" onclick="checkAnswer('question1','c')">C) พิม</button>
-                <button class="button" onclick="checkAnswer('question1','d')">D) ภีม</button>
-                <p id="result1"></p>
-                <hr>
-
-                <h1></h1>
-                <p id="question2">ข้อ 2) มหาวิทยาลัยกาฬสินธุ์ มีชื่อย่อว่าอะไร ?</p>
-                <button class="button" onclick="checkAnswer('question2','a')">A) KU</button>
-                <button class="button" onclick="checkAnswer('question2','b')">B) KSU</button>
-                <button class="button" onclick="checkAnswer('question2','c')">C) KKU</button>
-                <button class="button" onclick="checkAnswer('question2','d')">D) MKU</button>
-                <p id="result2"></p>
-                <hr>
-
-                <h1></h1>
-                <p id="summary"></p>
-                <hr>
-
-            <!-- </div> -->
-
-        </article>
-    </section>
-
-    <footer>
-        <h3>© 2024  All rights Reserved. ทูล ใจทอง Official Site!! (ไพฑูรย์  ทิพย์สันเทียะ)</h3>
-    </footer>
+<footer>
+  <p>© 2024  All rights Reserved. ทูล ใจทอง Official Site!! (ไพฑูรย์  ทิพย์สันเทียะ)</p>
+</footer>
 
 </body>
 </html>
