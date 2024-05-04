@@ -20,7 +20,7 @@ function checkAnswer(question, answer) {
         } else {
             result1.textContent = "Incorrect! Try again.";
             result1.style.color = 'red';
-            if (totalscore > 0){
+            if (totalscore > 0 && Q1State == 1){
                 totalscore = totalscore - 1;
                 Q1State = 0;
             }
@@ -40,7 +40,7 @@ function checkAnswer(question, answer) {
         } else {
             result2.textContent = "Incorrect! Try again.";
             result2.style.color = 'red';
-            if (totalscore > 0){
+            if (totalscore > 0 && Q2State == 1){
                 totalscore = totalscore - 1;
                 Q2State = 0;
             }
