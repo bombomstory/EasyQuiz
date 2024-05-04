@@ -1,5 +1,6 @@
 var totalscore = 0;
 var maxscore = 2;
+var Q1State, Q2State = 0;
 
 function checkAnswer(question, answer) {
     const result1 = document.getElementById('result1');
@@ -9,8 +10,9 @@ function checkAnswer(question, answer) {
         if (answer === 'a') {
             result1.textContent = "ถูกต้อง PIM ย่อมาจาก PIM";
             result1.style.color = 'green';
-            if (totalscore < maxscore ){
+            if (totalscore < maxscore && Q1State == 0){
                 totalscore = totalscore + 1;
+                Q1State = 1;
             }
             summary.textContent = "คุณได้คะแนนรวม: "+totalscore+" คะแนน";
             summary.style.color = 'blue';
@@ -19,6 +21,7 @@ function checkAnswer(question, answer) {
             result1.style.color = 'red';
             if (totalscore > 0){
                 totalscore = totalscore - 1;
+                Q1State = 0;
             }
             summary.textContent = "คุณได้คะแนนรวม: "+totalscore+" คะแนน";
             summary.style.color = 'red';
@@ -27,8 +30,9 @@ function checkAnswer(question, answer) {
         if (answer === 'b') {
             result2.textContent = "ชื่อย่อของมหาวิทยาลัยกาฬสินธุ์คือ KSU";
             result2.style.color = 'green';
-            if (totalscore < maxscore ){
+            if (totalscore < maxscore && Q2State == 0){
                 totalscore = totalscore + 1;
+                Q2State = 1;
             }
             summary.textContent = "คุณได้คะแนนรวม: "+totalscore+" คะแนน";
             summary.style.color = 'blue';
@@ -37,6 +41,7 @@ function checkAnswer(question, answer) {
             result2.style.color = 'red';
             if (totalscore > 0){
                 totalscore = totalscore - 1;
+                Q2State = 0;
             }
             summary.textContent = "คุณได้คะแนนรวม: "+totalscore+" คะแนน";
             summary.style.color = 'red';
