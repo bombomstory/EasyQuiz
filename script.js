@@ -1,6 +1,7 @@
 var totalscore = 0;
 var maxscore = 2;
-var Q1State, Q2State = 0;
+var Q1State = 0
+var Q2State = 0;
 
 function checkAnswer(question, answer) {
     const result1 = document.getElementById('result1');
