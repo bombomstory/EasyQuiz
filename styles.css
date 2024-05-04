@@ -9,12 +9,10 @@ body {
 }
 
 .header-container {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 20px;
+    background-color: lightblue;
+    height:50px;
     text-align: center;
-    width: 90%;
+    width:100%;
 }
 
 .quiz-container {
@@ -23,16 +21,14 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 20px;
     text-align: center;
-    width: 90%;
+    width: 100%;
 }
 
 .footer-container {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 20px;
+    background-color: lightblue;
+    height:50px;
     text-align: center;
-    width: 90%;
+    width:100%;
 }
 
 .button {
