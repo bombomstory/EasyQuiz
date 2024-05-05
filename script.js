@@ -52,3 +52,11 @@ function checkAnswer(question, answer) {
     }
 
 }
+
+function feedbackAnswer(QuestionState) {
+    if(QuestionState==1){
+        alert("ยินดีด้วย คุณตอบข้อนี้ถูก :)");
+    }else{
+        alert("เสียใจด้วย คุณตอบข้อนี้ผิด!!");
+    }
+}
